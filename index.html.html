@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIT-Registration-Form</title>
+    <link rel="shortcut icon" href="./images/smit-logo.svg" type="image/x-icon">
+</head>
+<body bgcolor="#f7f8fc">
+  
+    <!-- navbar -->
+    <!-- <nav>
+        
+   <img src="./images/smit-logo.svg" alt="logo" width="70" >
+    
+    </nav> -->
+
+    <!-- banner  -->
+    <img src="./images/smit-registration-form.svg" alt="smit-banner" width="100%">
+    <!-- form -->
+     <form  >
+     <fieldset>
+        <legend><h1>Location & Course Details</h1>
+</legend>
+<!--  -->
+<label for="Country">Select Country*</label><br>
+<select  name="Country" id="Country" required>
+<option value="" disabled selected hidden>Choose an option</option>
+  <option value="Pakistan">Pakistan</option>
+    <option value="Pakistan">India</option>
+    <option value="Pakistan">Turkey</option>
+    <option value="Pakistan">Spain</option>
+    <option value="Pakistan">Iran</option>
+    <option value="Pakistan">Qatar</option>
+    <option value="Pakistan">Saudi Arabia</option>
+    <option value="Pakistan">Palestine</option>
+    <option value="Pakistan">United states</option>
+    <option value="Pakistan">Canada</option>
+</select>
+<br>
+<br>
+<!-- Select class preference* -->
+ <label for="Class">Select your class </label><br>
+ <select  name="Select class preference*" id="Class" required>
+<option value="" disabled selected hidden>Choose an option</option>
+  <option value="Online">Online</option>
+    <option value="Onsite">Onsite</option>
+</select>
+<br>
+<br>
+<!-- select gender -->
+ <label for="gender">Gender</label><br>
+<input checked type="radio" name="Gender" id="male" ><label for="male">male</label>
+<input type="radio" name="Gender" id="female" ><label for="female">female</label>
+<br>
+<br>
+<!-- select city -->
+ <label for="City">Select City*</label><br>
+ <select  name="Select City*" id="City" required>
+  <!-- placeholder without hidden -->
+<option value="" disabled selected >Choose an option</option>
+  <option value="Online">Karachi</option>
+    <option value="Onsite">Multan</option>
+    <option value="Onsite">Sahiwal</option>
+    <option value="Onsite">Ladkana</option>
+
+</select>
+<!-- select cources -->
+ <br>
+<br>
+<!-- select cources -->
+ <label for="Cources">Select Cources*</label><br>
+ <select name="Select Cources*" id="Cources" required>
+    <!-- empty option -->
+     <option value="" disabled selected hidden>Choose an option</option>
+    <option value="Online">Web Developement</option>
+    <option value="Onsite">Machine Learning</option>
+    <option value="Onsite">Agentic Ai</option>
+    <option value="Onsite">Data Science</option>
+
+</select>
+<br>
+<br>
+<!-- select campus -->
+ <label for="campus">Select Campus</label><br>
+ <select name="Select Campus*" id="Campus" required>
+    <!-- empty option -->
+    <option value="" disabled selected hidden>Choose an option</option>
+    <option value="Online">Gulshan</option>
+    <option value="Onsite">Paposh</option>
+    <option value="Onsite">Zaitoon Ashraf</option>
+    <option value="Onsite">University Road</option>
+
+</select>
+</fieldset>   
+<!-- personal information -->
+ <fieldset>
+    <!-- Full name -->
+    <legend><h1>Personal Information</h1></legend>
+
+    <label for="name">Full Name:<span style="color:#ef4444">*</span></label>
+    <br>
+    <input type="text" name="username"  id="name"  required placeholder="your name">
+    <br>
+    <!-- father name  -->
+     <label for="FatherName">Father Name:<span style="color:#ef4444">*</span></label>
+     <br>
+     <input type="text" name="Father name " id="FatherName"  required placeholder="Father Name">
+     <br>
+     <!-- email -->
+     <label for="email">Email:<span style="color:#ef4444">*</span></label>
+     <br>
+     <input type="email" name="email" id="email" required placeholder="Enter Emial">
+     <br>
+     <!-- date of birth -->
+      <label for="DateOfBirth">Date of Birth:<span style="color:#ef4444">*</span>
+        <br>
+        <input type="date" name="date" id="DateOfBirth">
+
+      </label>
+      <br>
+    <!--  phone -->
+      <label for="phone">Phone:<span style="color:#ef4444">*</span>
+        <br>
+        <input type="tel" name="phone" id="phone" maxlength="11"  pattern="03[0-9]{9}">
+      </label>
+      <br>
+      <!-- father phone -->
+       <label for="FatherPhone">Father's Phone:<span style="color:#ef4444">*</span>
+        <br>
+        <input type="tel" name="phone" id="FaterPhone" maxlength="11">
+      </label>
+      <br>
+    
+       <!-- Id number -->
+        <label for="Id">ID Number:<span style="color:#ef4444">*</span></label>
+        <br>
+        <input type="number" name="id" id="Id" maxlength="13"> 
+    <br>
+        <!-- father id number -->
+          <label for="FatherId">Father's ID Number:<span style="color:#ef4444">*</span></label>
+        <br>
+        <input type="number" name="id" id="FatherId" maxlength="13">
+        <br>
+         <!-- address -->
+          <label for="address">Address:</label>
+          <br>
+          <textarea name="address" id="address" placeholder="enter address here" rows="4" cols="50" maxlength="50"></textarea>
+        </fieldset>
+        <!-- Education & Technical Details
+ -->
+        <fieldset>
+            <legend><h1>Education & Technical Details
+</h1></legend>
+<!-- Computer Proficiency * -->
+ <label for="ComputerProficiency">Computer Proficiency<span style="color:#ef4444">*</span>
+  <br>
+  <select name="Computer Proficiency" id="ComputerProficiency">
+    <option value="Computer Proficiency">Choose</option>
+    <option value="Biggner">Biggner</option>
+    <option value="Intermediate">Intermediate</option>
+    <option value="Advanced">Advanced</option>
+    <option value="Expert">Expert</option>
+
+
+  </select>
+ </label>
+ <br>
+
+<!-- Last Qualification * -->
+<label for="LastQualification">Last Qualification<span style="color:#ef4444">*</span>
+  <br>
+  <select name="LastQualification" id="LastQualification">
+
+  <option value="" disabled selected hidden>Choose an option</option>
+  <option value="Matriculation">High School / Secondary</option>
+  <option value="Intermediate">Intermediate</option>
+  <option value="UnderGraduate">UnderGraduate</option>
+  <option value="Bachelor">Bachelor</option>
+  <option value="Master">Master</option>
+  </select>
+
+</label>
+<br>
+<!-- Where did you hear about us? * -->
+
+<label for="HearAbout">Where did you hear about us?<span style="color:#ef4444">*</span>
+  <br>
+  <select name="HearAbout" id="HearAbout">Where did you hear about us?
+<option value="" disabled selected hidden>Choose an option</option>
+    <option value="facebook">facebook</option>
+    <option value="facebook">Instagram</option>
+    <option value="facebook">Google</option>
+    <option value="facebook">Workspace</option>
+  </select>
+
+</label>
+<br>
+
+
+<!-- Do you have a Laptop? * -->
+ <label for="laptop">Do you have a Laptop?
+<br>
+<input checked type="radio" name="Laptop" id="Yes"><label for="Yes">Yes</label><br>
+<input type="radio" name="Laptop" id="No"><label for="No">No</label><br>
+
+ </label>
+ <br>
+
+<!-- Upload Picture -->
+ <fieldset>
+  <legend><h1>Upload Picture</h1></legend>
+
+  <!-- we can use regular expressions for fixed file types  -->
+  <input type="file" name="picture" id="picture">
+
+ </fieldset>
+
+<br>
+
+
+
+
+
+
+
+
+
+
+        </fieldset>
+        <!-- Terms and Conditions -->
+         <fieldset>
+          <legend><h1>Terms of Service</h1></legend>
+         
+ 
+  <input type="checkbox" name="conditions" id="condition1"><label for="condition1">I hereby solemnly declare that all information provided in this application is true and accurate to the best of my knowledge. Furthermore, I agree to abide by all current and future rules, regulations, and policies 
+<br>
+<input type="checkbox" name="conditions" id="condition2"><label for="condition2">I hereby solemnly declare that all information provided in this application is true and accurate to the best of my knowledge. Furthermore, I agree to abide by all current and future rules, regulations, and policies 
+</label>
+<br>
+<input type="checkbox" name="conditions" id="condition3"><label for="condition3">I hereby solemnly declare that all information provided in this application is true and accurate to the best of my knowledge. Furthermore, I agree to abide by all current and future rules, regulations, and policies established by SMIT.
+</label>
+<hr>
+<p >By submitting this form, you agree to our <em>Privacy Policy</em> and <em>Terms of Service</em>.
+
+</p>
+ </fieldset>
+ <h3>Important Notice:
+
+</h3 align="middle">
+<p >Please ensure all information provided is accurate. Incomplete or false information may result in rejection of your application.
+
+</p>
+
+<input bgcolor="#0069D0," type="submit">
+
+
+
+
+
+     </form>
+
+    
+</body>
+</html>
